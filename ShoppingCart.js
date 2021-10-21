@@ -8,12 +8,15 @@ function Total() {
 
         ],
         totalPrice: function() {
-            var total = 0;
-            for (var i = 0; i < cart.items.length - 1; i++) {
-                total = total + cart.items[i][1];
+            let total = 0;
+            for (var i = 0; i < cart.items.length; i++) {
+                total = total + cart.items[i].price;
             }
-            return (this.totalPrice.total);
+            alert("The total of the list of fruits is " + total);
         }
     }
-    alert(cart.totalPrice() + "HOI");
+
+    cart.totalPrice();
+    // console.log(a);
+
 }
