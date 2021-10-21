@@ -9,14 +9,34 @@
     <script type="text/javascript" src="Temperature.js">
     </script>
 
+    <script type="text/javascript" src="ShoppingCart.js">
+    </script>
+
+    <script type="text/javascript" src="ToDoApp.js">
+    </script>
+
 </head>
 
-<body>
-    HI
+<body style="text-align: center;">
+    <h1>HI, Today we are going to convert Celsius to Fahrenheit and vice-versa.</h1>
+    <br>
+    <form>
+        <p> Want to convert Fahrenheit to Celsius? <input type="button" value="YES" onclick="javascript:Fahrenheit()" /> <br> <br> Want to convert Celsius to Fahrenheit? <input type="button" value="YES" onclick="javascript:Celsius()" /></p>
 
-    <form method="POST" action="">
-        Want to convert Fahrenheit to Celsius? <input type="button" name="Fahrenheit" value="YES" onclick="Fahrenheit()" />
+    </form>
+    <br><br>
 
+    <h1> Here, We are going to calculate the total price of the products mentioned below.</h1>
+    <form>
+        <ul style="list-style: none;">
+
+            <li>Apple - Rs. 300</li>
+            <li>Banana - Rs. 100</li>
+            <li>Grapes - Rs. 200</li>
+            <li>Pine Apple - Rs. 150</li>
+        </ul>
+
+        <input type="button" value="Calculate total" onclick="javascript:Total()" />
     </form>
 </body>
 
